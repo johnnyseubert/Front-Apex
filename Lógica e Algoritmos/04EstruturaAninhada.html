@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrutura Aninhada</title>
+    <script>
+      /* Obter notas ParseInt e parseFloat é para converter o 
+        texto do prompt em numeros inteiros ou float */
+      var nota1 = parseFloat(prompt("Informe a primeira nota: "));
+      var nota2 = parseFloat(prompt("Informe a segunda nota: "));
+
+      // Médio
+      var media = (nota1 + nota2) / 2;
+
+      if (media >= 7) {
+        document.write("Você está aprovado, sua média é " + media);
+      } else if (media >= 5) {
+        document.write("Você está em exame, sua média é " + media);
+      } else {
+        document.write("Você está reprovado, sua media é " + media);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
