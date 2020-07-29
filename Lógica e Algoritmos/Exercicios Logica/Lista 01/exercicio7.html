@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <script>
+        // Pegar os numeros
+        var num1 = parseFloat(prompt("Digite um número"));
+        var num2 = parseFloat(prompt("Digite outro número"));
+
+        //Escolher a forma
+
+        var operacao = (" Escolha a operação")
+        operacao += ("\n 1) Soma")
+        operacao += ("\n 2) Subtração")
+        operacao += ("\n 3) multiplicação")
+        operacao += ("\n 4) divisão")
+
+        var escolha = prompt(operacao)
+
+        if (escolha == 1) {
+            alert("A soma é " + (num1 + num2))
+        } else if (escolha == 2) {
+            alert("A subtração é " + (num1 - num2))
+        } else if (escolha == 3) {
+            alert("A multiplicação é " + (num1 * num2))
+        } else if (escolha == 4) {
+            alert("A divisão é " + (num1 / num2))
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

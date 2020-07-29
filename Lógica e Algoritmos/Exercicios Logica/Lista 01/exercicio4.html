@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <script>
+        // Variaveis
+        var moeda_1c = prompt("R$ 0,01") * 0.01
+        var moeda_5c = prompt("R$ 0,05") * 0.05
+        var moeda_10c = prompt("R$ 0,10") * 0.10
+        var moeda_25c = prompt("R$ 0,25") * 0.25
+        var moeda_50c = prompt("R$ 0,50") * 0.50
+        var moeda_1r = prompt("R$ 1,00") * 1
+
+        var total = moeda_1c + moeda_5c + moeda_10c + moeda_25c + moeda_50c + moeda_1r
+
+        document.write(total.toFixed(2))  /* o toFixed(2) faz com que o numero pare no 1.91 e nao fique no 1.9100000000000 pode ser qualquer numero no lugar do 2  */
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8 </title>
+    <script>
+
+        var nota1 = parseFloat(prompt("Digite a nota 1"))
+        var nota2 = parseFloat(prompt("Digite a nota 2"))
+        var faltas = parseInt(prompt("Digite o número de faltas"))
+        var media = (nota1 + nota2) / 2
+        if (faltas > 15) {
+            alert("Reprovado por ter " + faltas + " faltas")
+        } else if (media >= 7) {
+            alert("Aprovado por ter media " + media)
+        } else if (media >= 5) {
+            alert("Em exame por ter media " + media)
+        } else if (media >= 0) {
+            alert("Reprovado por ter media " + media)
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <script>
+
+        //Mensagem
+        var mensagem = "1) Pizza R$ 12,00\n"
+        mensagem += "2) Pão de queijo R$ 4,00\n"
+        mensagem += "3) Macarrão R$ 16,00\n"
+        mensagem += "4) Pastel R$ 4,50"
+
+        // Perguntando o pedido
+        var pedido = prompt(mensagem)
+
+        //Perguntar quanto foi pago
+        var pagamento = prompt("Quanto foi dado ao caixa?")
+        var troco
+
+        //Condicional de escolha de produto 1 2 3 ou 4
+        if (pedido == 1) {
+            troco = pagamento - 12
+        } else if (pedido == 2) {
+            troco = pagamento - 4
+        } else if (pedido = 3) {
+            troco = pagamento - 16
+        } else if (pedido - 4) {
+            troco = pagamento - 16
+        }
+
+        // Condicional de troco caso de menos que o valor comprado
+        if (troco < 0) {
+            alert("Pagamento Invalido")
+        } else {
+            alert("Pagamento Realizado seu troco é R$ " + troco)
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

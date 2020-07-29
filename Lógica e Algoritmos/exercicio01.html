@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 1</title>
+    <script>
+
+        // Criar um sistema para realizar a tabuada. O usuário informa um número, em seguida é realizada a tabuada daquele número.
+
+        // Obter o numero
+        var numero = parseInt(prompt("Informe um número:"))
+        var indice = 1
+
+        // Fazer a tabuada
+        do {
+            document.write(numero + "x1 = " + numero * indice + "<br>")
+            indice++
+        } while (indice < 11);
+        document.write("<hr>")
+        document.write("Esta é a tabuada do " + numero)
+        document.write("<br>")
+
+
+        indice = 1
+        while (indice < 11) {
+            document.write(numero + "x1 = " + numero * indice + "<br>")
+            indice++
+        }
+        document.write("Esta é a tabuada do " + numero)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

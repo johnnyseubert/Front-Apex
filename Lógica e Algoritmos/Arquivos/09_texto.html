@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto</title>
+    <script>
+
+        // Obter palavra
+        var palavra = prompt("Digite uma palavra")
+
+        // Exibir quantidade de caracteres
+        document.write("A palavra " + palavra + " possui " + palavra.length + " caracteres ")
+
+        // Contadores
+        var vog = 0
+        var con = 0
+
+        // Indice
+        var indice = 0
+
+        // Laço
+        do {
+            document.write("<br> " + (indice + 1) + " ª" + palavra.charAt(indice))
+
+            var letra = palavra.charAt(indice)
+            if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
+                vog++
+            } else {
+                con++
+            }
+
+            indice++
+        } while (indice < palavra.length);
+
+        // Exibir contadores
+        document.write("<hr>")
+        document.write("Vogais: " + vog + "<br>")
+        document.write("Consoantes: " + con)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
