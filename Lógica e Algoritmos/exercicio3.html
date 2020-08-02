@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <script>
+        /*  Peça vários números, até que o usuário informe o número zero. Informe a quantidade de pares, ímpares, positivos e negativos.
+        Exiba todos os valores informados*/
+
+        var numeros = []
+        var numero = 0
+        var validar = false
+
+        do {
+            numero = parseInt(prompt("Digite um número"))
+            if (numero != 0) {
+                numeros.push(numero)
+            } else {
+                validar = true
+            }
+
+        } while (validar == false);
+
+        var positivo = 0
+        var negativo = 0
+        var impar = 0
+        var par = 0
+
+        for (var indice = 0; indice < numeros.length; indice++) {
+
+            // POSITIVO E NEGATIVO
+            if (numeros[indice] >= 0) {
+                positivo++
+            } else {
+                negativo++
+            }
+
+            // PAR IMPAR
+            if (numeros[indice] % 2 == 0) {
+                par++
+            } else {
+                impar++
+            }
+
+        }
+
+        document.write("Temos " + positivo + " numeros positivos <br>")
+        document.write("Temos " + negativo + " numeros negativos <br>")
+        document.write("Temos " + par + " numeros pares <br>")
+        document.write("Temos " + impar + " numeros impares")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

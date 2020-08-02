@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+    <script>
+        /* O usuário informa 5 números, faça a média desses cinco valores e exiba quais números são maiores ou iguais a média desses cinco
+        valores e exiba quais os números são maiores ou iguais a média */
+
+        // Vetor
+        var numeros = []
+        var indice = 0
+
+
+        // Perguntar os 5 numeros
+        for (var indice = 0; indice < 5; indice++) {
+            numeros[indice] = parseFloat(prompt("Digite o " + (indice + 1) + " º número"))
+
+        }
+        // REALIZAR A SOMA
+        var soma = 0
+        for (var indice = 0; indice < 5; indice++) {
+            soma += numeros[indice]
+
+        }
+        // Fazer a média
+        var media = soma / 5
+
+        // Falar a média dos numeros
+        document.write("A média dos numeros digitados é " + media + "<br>")
+
+
+        // Mostrar os numeros maiores ou iguais a média
+        for (var indice = 0; indice < 5; indice++) {
+            if (numeros[indice] >= media) {
+                document.write(numeros[indice] + " é maior ou igual a média <br>")
+            }
+
+        }
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
