@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <script>
+        /* Desenvolver um sistema, onde o usuário irá pedir duas notas, em seguida exiba a média e a situação.
+         A situação será aprovada se a média for 7 ou mais, caso contrário será reprovada. */
+
+        function calcular() {
+            // Obter as notas
+            var nota1 = parseFloat(document.getElementById("n1").value)
+            var nota2 = parseFloat(document.getElementById("n2").value)
+
+            // Realizar média
+            var media = (nota1 + nota2) / 2
+
+            // Condicional
+            var condicao = "aprovado(a)"
+            if (media < 7) {
+                condicao = "Reprodado(a)"
+            }
+
+            // Exibir mensagem
+            document.getElementById("mensagem").innerHTML = condicao + " com média " + media
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Digite a primeira nota" id="n1">
+    <input type="text" placeholder="Digite a segunda nota" id="n2">
+    <button onclick="calcular()">Fazer Média</button>
+    <h1 id="mensagem"></h1>
+
+
+</body>
+
+</html>

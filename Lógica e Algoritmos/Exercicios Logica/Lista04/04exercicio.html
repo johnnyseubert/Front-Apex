@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <script>
+        /* Criar um sistema para efetuar cadastros de nomes.
+        Haverá um formulário para ser efetuado o cadastro e um local para exibir os nomes cadastrados. */
+        var vetor_nomes = []
+        function cadastrar() {
+            // Obter Nomes digitados
+            var nomes = document.getElementById("nomes").value
+            vetor_nomes.push(nomes)
+            document.getElementById("mensagem").innerHTML = ""
+            for (var indice = 0; indice < vetor_nomes.length; indice++) {
+                document.getElementById("mensagem").innerHTML += vetor_nomes[indice] + "<br>"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Digite um Nome" id="nomes">
+    <button onclick="cadastrar()">Cadastrar</button>
+    <h2 id="mensagem"></h2>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+    <script>
+        /*O usuário informa um valor, exiba a tabuada daquele número.*/
+        function calcular() {
+            //Obter os dados informados
+            var n = parseInt(document.getElementById("numero").value)
+            var indice = 1
+
+            do {
+                document.getElementById("mensagem").innerHTML += "A tabuada do " + n + " é " + n * indice + "<br>"
+                indice++
+            } while (indice <= 10);
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Digite um número" id="numero">
+    <button onclick="calcular()">Clique Aqui</button>
+    <h2 id="mensagem"></h2>
+
+</body>
+
+</html>

@@ -9,6 +9,20 @@
         /* Serão pedidos cinco números, informe a posição do número 10, caso não tenha sido informado nenhum número dez,
         exiba a frase "O número dez não foi informado".*/
 
+        // Crriando pergunta
+        var numeros = []
+
+        for (var indice = 0; indice < 5; indice++) {
+            numeros[indice] = parseInt(prompt("Digite um número: "))
+            document.write("<br>")
+            if (numeros[indice] == 10) {
+                document.write("o número " + numeros[indice] + " está na posição " + (indice + 1) + "<hr>")
+            }
+
+        }
+
+
+
 
     </script>
 </head>

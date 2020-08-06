@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+    <script>
+        // Informe três valores, exiba qual deles é o menor.
+
+        function calcular() {
+            // Obter as notas
+            var n1 = parseFloat(document.getElementById("numero1").value)
+            var n2 = parseFloat(document.getElementById("numero2").value)
+            var n3 = parseFloat(document.getElementById("numero3").value)
+            var maior
+
+            if (n1 > n2 && n1 > n3) {
+                maior = n1
+            } else if (n2 > n1 && n2 > n3) {
+                maior = n2
+            } else {
+                maior = n3
+            }
+
+            document.getElementById("mensagem").innerHTML = maior + " é o maior número"
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="text" placeholder="Digite o primeiro número" id="numero1">
+    <input type="text" placeholder="Digite o segundo número" id="numero2">
+    <input type="text" placeholder="Digite o terceiro número" id="numero3">
+    <button onclick="calcular()">Clique Aqui</button>
+
+    <h2 id="mensagem"></h2>
+
+</body>
+
+</html>

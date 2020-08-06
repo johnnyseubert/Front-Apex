@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+    <script>
+        //Criar um sistema, onde o usuário informa um valor. Retorne se o valor é par ou ímpar.
+        function calcular() {
+            var numero = parseFloat(document.getElementById("numero").value)
+            var valor
+
+            if (numero % 2 == 0) {
+                valor = "PAR"
+            } else {
+                valor = "impar"
+            }
+
+            document.getElementById("mensagem").innerHTML = numero + " é um numero " + valor
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Informe um número" id="numero">
+    <button onclick="calcular()">Calcular</button>
+    <h2 id="mensagem"></h2>
+
+</body>
+
+</html>
