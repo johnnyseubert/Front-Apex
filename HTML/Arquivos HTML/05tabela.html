@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 200px;
+            /* Se colocar PX  fica fixo e se colocar % fica responsivo */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Tabelas -->
+    <table border="1">
+        <!--TR é uma linha-->
+        <tr>
+            <td>1</td> <!-- TD é uma coluna-->
+            <td>2</td>
+        </tr>
+        <!--este tr abre a linha 2-->
+        <tr>
+
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <!-- Mesclar linha -->
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td colspan="2">D</td>
+            <!-- Colspan significa MESCLAR Coluna -->
+        </tr>
+
+    </table>
+    <hr>
+
+    <table border="1">
+        <thead>
+            <!-- Thead é cabeçalho, ele centraliza e deixa em negrito -->
+            <tr>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Corpo onde vai o conteúdo -->
+            <tr>
+                <td>Brenda</td>
+                <td>Indaial</td>
+                <td>Brenda.silva@gmail.com</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Rodapé</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
