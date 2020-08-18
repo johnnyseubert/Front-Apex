@@ -1,0 +1,161 @@
+/* Fontes */
+@font-face{/*No font family coloco o nome que eu quero*/
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+/* Padronizar as Tags */
+*{
+    margin: 0px;
+    padding: 0px;
+    font: 14px 'Roboto';
+}
+/* Topo */
+header{
+    background-color: rgb(185, 184, 184);
+    overflow: auto;  /* OverFlow auto é para limpar o Float */
+}
+header img{
+    float: left;
+    margin: 15px;
+}
+header nav{
+    float: right;
+}
+header > nav > a{
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 25px;
+    text-decoration: none;
+    color: black;
+}
+header a:hover{
+    text-decoration: underline;
+}
+/*Conteúdo principal*/
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* Página início */
+.inicio ul{
+    list-style: none; /* Este comando Tira as bolinhas da lista*/
+}
+.inicio > ul > li{
+    display: inline-block;
+    margin: 16px;
+}
+.inicio h1{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.inicio li:hover{
+    box-shadow: 1px 1px 10px black;
+    /* 
+    1º Borda horizontal (positivo direita negativo esquerda)
+    2º Borda Vertical  (positivo cima negativo baixo)
+    3º Esfumaçamento
+    4º Cor
+    */
+}
+
+/* PÁGINA SOBRE */
+.sobre{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.sobre div{
+    margin-top: 100px;
+    
+}
+.sobre img{
+    border: solid;
+    box-shadow: 1px 1px 5px black;
+    height: 450px;
+    float: left;
+}
+.sobre h1{
+    display: inline-block;
+    margin-right: 300px;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 320px;
+}
+.sobre p{
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 600px;
+    text-indent: 15px;
+    text-align: justify;
+}
+/* PÁGINA BLOG */
+.blog{
+    width: 1600px;
+    overflow: auto;
+}
+.blog section{
+    background: blanchedalmond;
+}
+
+.fotorama{
+    float: left;
+}
+.blog h1{
+    float: right;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-right: 600px;
+    margin-top: 90px;
+    
+}
+.blog p{
+    float: right;
+    width: 600px;
+    text-indent: 15px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-right: 400px;
+    font-size: 16px;
+}
+
+
+
+
+/* PÁGINA CONTATO */
+.contato{
+    width: 1200px;
+    height: 674px;
+    margin-top: 25px;
+    overflow: auto;
+}
+
+.contato h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.contato img{
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 400px;
+    float: left;
+}
+.contato p{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 400px;
+    margin-top: 105px;
+}
+
+/* Rodapé */
+footer{
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+    width: 94.7%;
+}
