@@ -1,12 +1,14 @@
 h1::after{
-    content:"Mobile";
-}
-*{
-    margin: 0px;
-    padding: 0px;
+    content: "Mobile";
 }
 
-[class*="col-mobile-"]{
+
+*{
+    margin: 0px;
+    padding: 0xp;
+}
+
+[class*="col-desktop-"]{
     float: left;
 }
 
@@ -28,5 +30,8 @@ h1::after{
 }
 
 .corVermelha{
-    background-color: red;
+    background-color:red;
 }
+
+
+

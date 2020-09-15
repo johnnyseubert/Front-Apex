@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrowFunction</title>
+
+    <!-- JavaScript -->
+    <script>
+
+        /*  versão normal
+
+        function () {
+            document.getElementById("botao").addEventListener("click", function mensagem() {
+                alert("oi")
+            })
+        } */
+
+        // Função Menor
+        let mensagem = () => {
+            document.getElementById("botao").addEventListener("click", function mensagem() {
+                alert("oi")
+            })
+        }
+
+        // Ao carregar
+        window.onload = () => {
+            document.getElementById("botao").addEventListener("click", function mensagem() {
+                alert("oi")
+            })
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <button id="botao">Clique Aqui</button>
+</body>
+
+</html>

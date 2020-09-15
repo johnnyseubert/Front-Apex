@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Hora</title>
+
+    <!-- JavaScript -->
+    <script>
+
+        //Objeto
+        let data_hora = new Date();
+
+        // Retornar Data
+        //alert(data_hora)
+
+        let dia = data_hora.getDate();
+        let mes = data_hora.getMonth();
+        let ano = data_hora.getFullYear();
+        let hora = data_hora.getHours();
+        let minuto = data_hora.getMinutes();
+        let segundo = data_hora.getSeconds();
+
+        alert(dia + "/" + mes + "/" + ano)
+
+        if (minuto < 10) {
+            alert(hora + ":" + "0" + minuto + ":" + segundo)
+        } else
+            alert(hora + ":" + minuto + ":" + segundo)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

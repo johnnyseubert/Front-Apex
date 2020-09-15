@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalo</title>
+    <!-- JavaScript -->
+    <script>
+        // Exibir uma mensagem após um segundo
+        setInterval(function () {
+
+            let data_hora = new Date();
+            let hora = data_hora.getHours();
+            let minuto = data_hora.getMinutes();
+            let segundo = data_hora.getSeconds();
+
+            document.getElementById("relogio").innerHTML = hora + ":" + minuto + ":" + segundo
+        }, 1000)
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1 id="relogio"></h1>
+</body>
+
+</html>

@@ -1,12 +1,13 @@
 h1::after{
-    content:"Tablet";
-}
-*{
-    margin: 0px;
-    padding: 0px;
+    content: "Tablet";
 }
 
-[class*="col-tablet-"]{
+*{
+    margin: 0px;
+    padding: 0xp;
+}
+
+[class*="col-desktop-"]{
     float: left;
 }
 
@@ -28,5 +29,5 @@ h1::after{
 }
 
 .corVermelha{
-    background-color: red;
+    background-color:red;
 }

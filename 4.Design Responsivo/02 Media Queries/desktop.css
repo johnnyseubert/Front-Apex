@@ -1,13 +1,13 @@
 h1::after{
-    content:"Desktop";
+    content: "Desktop";
 }
 
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0xp;
 }
 
-[class*="col-tablet-"]{
+[class*="col-desktop-"]{
     float: left;
 }
 
@@ -29,5 +29,5 @@ h1::after{
 }
 
 .corVermelha{
-    background-color: red;
+    background-color:red;
 }
