@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex - 2</title>
+    <script>
+        // Obter palavra digitada e salvando na variavel
+        function acao() {
+            // Funcionar botao e salvar o texto escrito
+            let palavra = document.getElementById("palavra")
+
+            //Validar se é um verbo terminado em AR
+            let verbo = palavra.value.slice(-2, palavra.value.length)
+
+            if (verbo != "ar") {
+                alert("Digite um verbo terminado em ar")
+            } else {
+                // Fazer a troca do AR pela conjugação
+                let conjugar = palavra.value.slice(0, palavra.value.length - 2)
+                document.write("Eu " + conjugar + "o" + "<br>")
+                document.write("Tu " + conjugar + "as" + "<br>")
+                document.write("Ele " + conjugar + "a" + "<br>")
+                document.write("Nós " + conjugar + "amos" + "<br>")
+                document.write("Vós " + conjugar + "ais" + "<br>")
+                document.write("Eles " + conjugar + "am" + "<br>")
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="palavra">
+    <button onclick="acao()">Clique Aqui</button>
+</body>
+
+</html>

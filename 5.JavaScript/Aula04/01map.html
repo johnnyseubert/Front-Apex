@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <script>
+
+        // Map é utilizado para percorrer todo o vetor, exemplo ele vai mexer no 4, 9, 49 e 81
+        //  um por um
+
+        // Math é uma biblioteca de funções de matematica
+        // srqt é raiz quadrada.
+
+        /* Exemplo 1
+        let numeros = [4, 9, 49, 81]
+
+        let raizQuadrada = numeros.map(Math.sqrt)
+
+        console.table(raizQuadrada)
+
+        let raizQuadrada = []
+
+        for (var i = 0; i < numeros.length; i++) {
+            raizQuadrada.push(Math.sqrt(numeros[i]))
+        }*/
+
+        //----------------------------------------------------------------------------------------
+
+        // Exemplo 2
+
+        let nomes = ["Marcela", "Christian", "Samantha"]
+        let vetor = nomes.map(objeto => { return "Boa noite " + objeto })
+        console.log(vetor)
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
