@@ -1,0 +1,11 @@
+*TypeScript - 22/09*
+
+- Linguagem de desenvolvimento focada no paradigma de Orientação a Objetos.
+- Superset do JavaScript, com suporte há diversas funcionalidades
+  não disponíveis no JavaScript convencional.
+
+- Desenvolvida e mantida pela Microsoft.
+- O TypeScript não é compreendido diretamente pelos navegadores, é necessário haver uma compilação.
+- Para funcionar o TypeScript é necessário ter o Node instalado.
+- Para instalar o Type abra o prompt (com o node instalado na maquina) 
+de comando e digite: npm i typescript

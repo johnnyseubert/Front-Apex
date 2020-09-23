@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+
+    <!-- Importar produto.js -->
+    <script src="produto.js"></script>
+
+    <!--  -->
+    <script>
+
+        criarObj = () => {
+            // Instanciar objeto
+            let obj = new Produto()
+            obj.nome = document.getElementById("nome").value
+            obj.valor = document.getElementById("valor").value
+            obj.segmento = document.getElementById("segmento").value
+
+            document.getElementById("mensagem").innerHTML = obj.mensagem()
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="valor" placeholder="valor">
+        <input type="text" id="segmento" placeholder="Segmento">
+        <input type="button" value="Enviar" onclick="criarObj()">
+    </form>
+    <h1 id="mensagem"></h1>
+</body>
+
+</html>

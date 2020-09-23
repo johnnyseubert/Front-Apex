@@ -1,0 +1,15 @@
+Operadores Ternários
+
+se = if ou this
+então/ {} = ?
+
+else{} = :
+
+-------------------------------------------------
+ex
+
+if(indice == 0){
+	alert("oi")
+} else{
+	alert("Tchau")
+}
