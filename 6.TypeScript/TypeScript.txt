@@ -9,3 +9,11 @@
 - Para funcionar o TypeScript é necessário ter o Node instalado.
 - Para instalar o Type abra o prompt (com o node instalado na maquina) 
 de comando e digite: npm i typescript
+
+para compilar o arquivo TypeScript basta escrever "tsc (nome do arquivo.ts)"
+
+para limpar o terminar bastra escrever "cls"
+
+para avançar uma pasta é "cd" + tab
+
+para retornar é "cd .."
