@@ -9,4 +9,5 @@
 - Senior, AmCOM, Mout's, Philips... Utilizam Node;
 - NPM: Gerenciador de pacotes;
 
-- Nodemon é um "Live server" para Node.js só dar um NPM dele no 
+- Nodemon é um "Live server" para Node.js só dar um NPM dele no terminal do VS CODE
+
