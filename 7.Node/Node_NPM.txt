@@ -1,0 +1,18 @@
+*Node.js*
+
+- Linguagem baseada em JavaScript;
+- O Node.js tem sua base no V8(motor) do chrome;
+- Node é o "Ambiente" onde podemos desenvolver aplicativos Web, Desktop e mobile;
+- É 100% Gratuito;
+- Criado em Maio de 2009;
+- Netflix, Facebook, Microsoft, Sony, CNN...  utilizam Node;
+- Senior, AmCOM, Mout's, Philips... Utilizam Node;
+- NPM: Gerenciador de pacotes;
+
+- Nodemon é um "Live server" para Node.js só dar um NPM dele no terminal do VS CODE
+
+npm Nodemon
+npm typescript
+npm json-server
+npm handlebars
+npm express
