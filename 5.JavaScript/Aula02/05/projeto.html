@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <title>Ex 05</title>
@@ -12,7 +11,7 @@
     <script>
 
         // Função
-        function acao() {
+        function acao(){
 
             // Captar números
             let n1 = document.getElementById("n1");
@@ -20,16 +19,16 @@
             let n3 = document.getElementById("n3");
 
             // Validar campos
-            if ((n1.value == "") || (n2.value == "") || (n3.value == "")) {
+            if((n1.value == "") || (n2.value == "") || (n3.value == "")){
                 alert("Os campos precisam estar preenchidos");
-            } else {
-                if (n1.value < n2.value && n1.value < n3.value) {
-                    alert(n1.value + " é o menor número.");
-                } else if (n2.value < n1.value && n2.value < n3.value) {
-                    alert(n2.value + " é o menor número.");
-                } else {
-                    alert(n3.value + " é o menor número.");
-                }
+            }else{
+               if(n1.value < n2.value && n1.value < n3.value){
+                   alert(n1.value+" é o menor número.");
+               }else if(n2.value < n1.value && n2.value < n3.value){
+                   alert(n2.value+" é o menor número.");
+               }else{
+                   alert(n3.value+" é o menor número.");
+               }
             }
 
             // Limpar os campos
@@ -44,9 +43,8 @@
     </script>
 
 </head>
-
 <body>
-
+    
     <form>
         <img src="icone.png">
 
@@ -57,5 +55,4 @@
     </form>
 
 </body>
-
 </html>

@@ -1,64 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texto</title>
-    <!-- Javascript -->
+    <title>07 Textos</title>
+
+    <!-- JS -->
     <script>
 
         // Frase
         let frase = "Aprendendo JavaScript na Apex! JavaScript é legal";
 
         // Contar caracteres
-        //document.write("A prase possui " + frase.length + " caracteres")
+        //document.write("A frase possui "+frase.length+" caracteres");
 
-        //IndexOf
+        // indexOf
         //document.write(frase.indexOf("JavaScript"))
-        // Index of retorna a posição  do que estou procurando no caso JavaScript
+        //document.write(frase.indexOf("JavaScript", 12))
 
-        // Search
+        // search
         //document.write(frase.search("JavaScript"))
 
-        // Slice
-        //document.write(frase.slice(11))
+        // slice
+        //document.write(frase.slice(-11))
         //document.write(frase.slice(11, 30))
 
-        // Subtring   
+        // substring
         //document.write(frase.substring(11))
+        //document.write(frase.substring(11, 21))
 
         // substr
-        //document.write(frase.substr(11, 22))
+        //document.write(frase.substr(11, 4))
 
         // replace
-        // document.write(frase.replace("JavaScript", "HTML"))
-        // document.write(frase.replace(/JavaScript/g, "HTML"))
+        //document.write(frase.replace("JavaScript", "HTML"))
+        //document.write(frase.replace(/JavaScript/g, "HTML"))
 
-        // Letras Minúsculas
-        // document.write(frase.toLowerCase())
+        // Letras minúsculas
+        //document.write(frase.toLowerCase())
 
-        // Letras Maiúscular
-        // document.write(frase.toUpperCase())
+        // Letras maiúsculas
+        //document.write(frase.toUpperCase())
 
         // Split
-        /* let palavras = frase.split(" ")
-        for (let i = 0; i < palavras.length; i++) {
-            document.write(palavras[i] + "<hr>")
+        //let palavras = frase.split(" ")
+        //for(let i=0; i<palavras.length; i++){
+        //    document.write(palavras[i]+"<hr>")
+        //}
 
-        } */
-
-        // CharAt
-        for (let i = 0; i < frase.length; i++) {
-            document.write(i + " - " + frase.charAt(i) + "<hr>")
+        // charAt
+        for(let i=0; i<frase.length; i++){
+            document.write(i+" - "+frase.charAt(i)+"<hr>")
         }
-
-
+        
     </script>
 </head>
-
 <body>
-
+    
 </body>
-
 </html>

@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Hora</title>
+    <title>01 Data e Hora</title>
 
-    <!-- JavaScript -->
+    <!-- JS -->
     <script>
 
-        //Objeto
-        let data_hora = new Date();
+        // Objeto
+        let data_hora = new Date()
 
-        // Retornar Data
-        //alert(data_hora)
+        // Retornar data
+        let dia = data_hora.getDate()
+        let mes = data_hora.getMonth() + 1
+        let ano = data_hora.getFullYear()
 
-        let dia = data_hora.getDate();
-        let mes = data_hora.getMonth();
-        let ano = data_hora.getFullYear();
-        let hora = data_hora.getHours();
-        let minuto = data_hora.getMinutes();
-        let segundo = data_hora.getSeconds();
+        let hora = data_hora.getHours()
+        let minuto = data_hora.getMinutes()
+        let segundo = data_hora.getSeconds()
 
-        alert(dia + "/" + mes + "/" + ano)
-
-        if (minuto < 10) {
-            alert(hora + ":" + "0" + minuto + ":" + segundo)
-        } else
-            alert(hora + ":" + minuto + ":" + segundo)
+        alert(dia+ "/" + mes + "/" + ano)
+        alert(hora + ":" + minuto + ":" + segundo)
 
     </script>
 </head>
-
 <body>
-
+    
 </body>
-
 </html>

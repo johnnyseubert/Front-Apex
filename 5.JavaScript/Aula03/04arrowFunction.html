@@ -1,42 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArrowFunction</title>
+    <title>04 Arrow Function</title>
 
-    <!-- JavaScript -->
+    <!-- JS -->
     <script>
 
-        /*  versão normal
-
-        function () {
-            document.getElementById("botao").addEventListener("click", function mensagem() {
-                alert("oi")
-            })
-        } */
-
-        // Função Menor
-        let mensagem = () => {
-            document.getElementById("botao").addEventListener("click", function mensagem() {
-                alert("oi")
-            })
-        }
+        // Função
+        let mensagem = () => alert("oi") 
 
         // Ao carregar
-        window.onload = () => {
-            document.getElementById("botao").addEventListener("click", function mensagem() {
-                alert("oi")
-            })
-
+        window.onload = () =>{
+            document.getElementById("botao").addEventListener("click", mensagem)
         }
 
     </script>
 </head>
-
 <body>
-    <button id="botao">Clique Aqui</button>
-</body>
+    
+    <button id="botao">Clique aqui</button>
 
+</body>
 </html>

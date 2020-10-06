@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Storage</title>
+    <title>06 LocalStorage</title>
 
-    <!-- Script -->
+    <!-- JS -->
     <script>
 
         // Verificar se há nome no LocalStorage
-        if (localStorage.getItem("nome") == null) {
-            localStorage.setItem("nome", "Johnny")
-        } else {
-            alert("O nome armazenado é " + localStorage.getItem("nome"))
+        if(localStorage.getItem("nome") == null){
+            localStorage.setItem("nome", "Ralf")
+        }else{
+            alert("O nome armazenado é "+localStorage.getItem("nome"))
         }
-
 
     </script>
 </head>
-
 <body>
-
+    
 </body>
-
 </html>
