@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-color: bisque;
+}
+
+img{
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+form{
+    width: 50%;
+    margin: 30px auto;
+}
+
+.ele-form{
+    margin-top: 10px;
+}

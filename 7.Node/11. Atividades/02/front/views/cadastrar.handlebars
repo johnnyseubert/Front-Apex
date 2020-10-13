@@ -1,0 +1,33 @@
+<form action="/cadastrarreceitas" method="POST">
+    <input type="text" name="receita" placeholder="Nome da Receita" class="form form-control">
+    <input type="text" name="ingredientes" placeholder="Ingredientes" class="form form-control">
+    <input type="text" name="modoPreparo" placeholder="Modo de Preparo" class="form form-control">
+    <input type="text" name="qtdPessoas" placeholder="Quantidade de Pessoas que serve" class="form form-control">
+    <input type="submit" value="Cadastrar" class="btn btn-primary">
+</form>
+<form action="/voltar">
+    <input type="submit" value="voltar" class="btn btn-secondary">
+</form>
+
+<table border="1">
+    {{#each cadastrados}}
+    <tr>
+        <td>
+            <p class="center">Nome da Receita: {{receita}} </p>
+        </td>
+        <td>
+            <p class="center">Ingredientes: {{ingredientes}}</p>
+        </td>
+        <td>
+            <p>Modo de Preparo: {{modoPreparo}}</p>
+        </td>
+        <td>
+            <p>Quantidade de pessoas que serve: {{qtdPessoas}}</p>
+        </td>
+        <td>
+            <p>ID: {{id}}</p>
+        </td>
+        <td><a href="/remover/{{id}}" class="center">Remover</a></td>
+    </tr>
+    {{/each}}
+</table>

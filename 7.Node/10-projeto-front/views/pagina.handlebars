@@ -1,0 +1,18 @@
+<img src="imagens/icone.png" width="50px">
+<form action="/cadastrar" method="POST">
+    <input type="text" name="nome" placeholder="Nome" class="form-control ele-form">
+    <input type="text" name="idade" placeholder="Idade" class="form-control ele-form">
+    <input type="submit" value="cadastrar" class="btn btn-primary ele-form">
+</form>
+
+
+<table class="table table-striped" style="width: 800px; margin: 50px auto;">
+    {{#each vetor}}
+    <tr>
+        <td>Identificador: {{id}}</td>
+        <td>Nome: {{nome}}</td>
+        <td>Idade: {{idade}}</td>
+        <td><a href="/remover/{{id}}" class="btn btn-danger">Remover</a></td>
+    </tr>
+    {{/each}}
+</table>
