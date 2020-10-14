@@ -1,6 +1,7 @@
 .center{
     text-align: center;
     align-items: baseline;
+    justify-content: center;
 }
 
 td{

@@ -1,0 +1,8 @@
+*Conceitos*
+> Biblioteca desenvolvida em JS
+> Criado e mantido pelo Facebook
+> Componentização (quebra o sistema)
+> ReactJS (web) e React Native (APP Mobile)
+> JSX (Java do próprio React)
+
+COMANDO PARA INSTALAR npx create-react-app 

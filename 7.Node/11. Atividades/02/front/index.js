@@ -103,8 +103,7 @@ fetch('http://localhost:3000/receitas',{
     body: JSON.stringify(dados),
     headers: { 'Content-Type': 'application/json ' }
 })
-.then(res.render('listar'))
-.then(res.redirect('/listarreceitas'))
+    .then(res.render('listar'))
 
 })
 
