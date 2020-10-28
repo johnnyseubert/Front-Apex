@@ -14,11 +14,6 @@ import './estilos.css';
 
 
 
-
-
-
-
-
 class Formulario extends React.Component {
 
     render() {

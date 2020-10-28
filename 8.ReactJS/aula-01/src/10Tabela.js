@@ -22,8 +22,8 @@ class Tabela extends React.Component {
                         <td>{elemento.produto}</td>
                         <td>{elemento.valor}</td>
                     </tr>
-                })}
-            </table>
+                )
+                )}</table>
         )
     }
 }

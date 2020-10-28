@@ -1,0 +1,5 @@
+1º ng new "nome da pasta"
+
+2º ng g c "nome do arquivo"  (Cria o novo componente/html/css)
+
+3º ng s  (inicia o servidor na porta 4200)
