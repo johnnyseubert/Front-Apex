@@ -1,0 +1,12 @@
+form{
+    text-align: center;
+}
+
+input{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+input[type="button"]{
+    border: 0;
+}

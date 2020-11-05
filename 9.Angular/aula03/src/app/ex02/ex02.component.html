@@ -1,0 +1,28 @@
+<div class="container">
+    <form>
+        <h1 style="margin-top: 10px; margin-bottom: 10px;">Cadastrar e Excluir Produtos</h1>
+        <input type="text" [(ngModel)]="produto" placeholder="Nome do Produto" name="produto" class="form-control">
+        <input type="text" [(ngModel)]="valor" placeholder="Valor do Produto" name="valor" class="form-control">
+        <input type="text" [(ngModel)]="marca" placeholder="Marca do Produto" name="marca" class="form-control">
+        <input type="button" value="Cadastrar" (click)="cadastrar()" class="form-control btn-primary">
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Valor</th>
+                <th>Marca</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let linha of vetor'>
+                <td>{{linha.produto}}</td>
+                <td>{{linha.valor}}</td>
+                <td>{{linha.marca}}</td>
+                <td><input type="button" value="Deletar" class="btn btn-primary"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

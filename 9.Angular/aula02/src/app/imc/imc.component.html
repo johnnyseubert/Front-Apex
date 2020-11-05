@@ -1,0 +1,22 @@
+<main class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <form>
+                <input type="number" [(ngModel)]="altura" name="altura" placeholder="Digite sua Altura"
+                    class="form-control">
+                <input type="number" [(ngModel)]="peso" name="peso" placeholder="Digite seu peso" class="form-control">
+                <input type="button" (click)="calcular()" value="Calcular" class="btn btn-danger">
+            </form>
+        </div>
+    </div>
+
+    <!-- Bind -->
+    <div class="row">
+        <div class="col-12">
+            <h1>{{mensagem}}</h1>
+        </div>
+    </div>
+
+
+
+</main>

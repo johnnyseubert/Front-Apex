@@ -1,0 +1,14 @@
+<div class="container">
+    <form>
+        <h1>Calcular média do aluno</h1>
+        <input type="text" [(ngModel)]="nome" name="nome" placeholder="Digite seu nome" class="form-control espaco">
+        <input type="number" [(ngModel)]="nota1" name="nota1" placeholder="Digite a primeira nota"
+            class="form-control espaco">
+        <input type="number" [(ngModel)]="nota2" name="nota2" placeholder="Digite a segunda nota"
+            class="form-control espaco">
+        <input type="number" [(ngModel)]="nota3" name="nota3" placeholder="Digite a terceira nota"
+            class="form-control espaco">
+        <input type="button" value="Calcular" (click)="calcular()" class="form-control btn btn-warning">
+        <h1>{{mensagem}}</h1>
+    </form>
+</div>
